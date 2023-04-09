@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLeft"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:icon="@drawable/teal_vector"
+            app:iconGravity="textStart"
+            app:backgroundTint="@color/toggle_button_background_color_state_list"
+            app:iconTint="@color/teal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCenter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:icon="@drawable/green_vector"
+            app:iconGravity="textStart"
+            app:backgroundTint="@color/toggle_button_background_color_state_list"
+            app:iconTint="@color/green" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:iconGravity="textStart"
+            app:icon="@drawable/orange_vector"
+            app:backgroundTint="@color/toggle_button_background_color_state_list"
+            app:iconTint="@color/orange" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <LinearLayout
+        android:id="@+id/color_wheel_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginStart="24sp"
+        android:layout_marginEnd="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <com.github.antonpopoff.colorwheel.ColorWheel
+        android:id="@+id/colorWheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
