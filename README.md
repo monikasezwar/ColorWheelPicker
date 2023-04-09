@@ -25,3 +25,7 @@ View: The user interface of the application.
 ViewModel: The intermediary between the Model and the View.
 Libraries Used
 The ColorWheel Android project uses the following libraries:
+
+https://drive.google.com/file/d/1JiuJeWawcjNZ9jOlQakBV4gvT2Ipzt1c/view?usp=sharing
+
+https://drive.google.com/file/d/19MN7uGmPf_tvihDdkswy0PpvvyZxSQM6/view?usp=sharing
